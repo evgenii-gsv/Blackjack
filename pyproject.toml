@@ -6,7 +6,7 @@ authors = ["Evgenii Gusev <ged1994@mail.ru>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = ">=3.10,<3.13"
+python = ">=3.9,<3.13"
 colored = "^2.2.3"
 inquirer = "^3.1.3"
 
