@@ -46,7 +46,7 @@ class Game:
         self._give_initial_cards_to_player_and_dealer()
         self._show_hand_cards(self.dealer.hand, dealer=True)
 
-        if self.dealer.hand[1] is Rank.ACE:
+        if self.dealer.hand[1].rank is Rank.ACE:
             insurance_bet = self._check_for_insurance(bet)
             print(Message.CHECKING_FOR_DEALER_BLACKJACK)
             self._sleep()
@@ -192,8 +192,6 @@ class Game:
             choices=('Yes', 'No')
         )
         if insurance == 'No':
-            print(Message.CHECKING_FOR_DEALER_BLACKJACK)
-            self._sleep()
             return
         insurance_bet = self.player.make_insurance_bet(possible_bet=int(bet / 2))
         return insurance_bet

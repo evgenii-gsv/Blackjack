@@ -20,7 +20,7 @@ class Message:
     DRAW = "You and Dealer both have the score of {score}.\nYou got your bet back.\n"
     PLAYER_BLACKJACK = "You got a Blackjack, you won {chips} chips.\n"
     PLAYER_DOUBLE_DOWN = "You added {chips} chips to your bet.\n"
-    INSURANCE_PROMPT = "Dealer has a visible Ace. Would you like to place in Insurance Bet? Currently you have {chips} chips."
+    INSURANCE_PROMPT = "Dealer has a visible Ace. Would you like to place an Insurance Bet? Currently you have {chips} chips"
     INSURANCE_BETTING_INVITATION = "Place your Insurance bet. Maximum possible bet is {possible_bet} chips"
     CHECKING_FOR_DEALER_BLACKJACK = "Checking if Dealer has Blackjack...\n"
     NO_DEALER_BLACKJACK = "Dealer doesn't have Blackjack.\n"
